@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="cnrdsrz">
+            <title>Formulario</title>
+   
+    
+</head>
+<body>
+    <main>
+         <form action="forms.clase.html" method="POST" target="_self">
+            <!-- Datos Personales (label e input) -->
+            <ul>
+                <li>
+                    <label for="nombre"> Nombre y Apellido </label> <input type="text" name="nombre"> <br><br>
+                </li>
+                <li>
+                    <label for="edad">Edad:</label> <input type="number" name="edad"> <br><br>
+                </li>
+                <li>
+                    <label for="email">Email</label> <input type="email" placeholder="Ingrese su e-mail"><br><br>
+                </li>
+                <li>
+                    <label for="password">Password</label> <input type="password" placeholder="Ingrese su contraseña"><br><br>
+                </li>
+            </ul>
+            <!-- Ocupación (radio buttom) -->
+            <div>
+                <label for="ocupación"> Selecciona tu ocupación:</label>
+                <input type="radio" id="estudiante" name="ocupación" value= "estudiante"></label>                
+                <label for="estudiante">Estudiante</label>
+                <input type="radio" id="Profesional" name= "ocupación" value= "Profesional"></label>
+                <label for="Profesional">Profesional</label>
+                <input type="radio" id="Otro" name= "ocupación" value= "Otro"></label>
+                <label for="Otro">Otro</label>
+            </div>
+            <br>
+            <!-- Hora de contacto (radio buttom) -->
+            <div>
+                <label for="hora de contacto"> Hora de contacto:</label><br>
+                <input type="radio" id="A la mañana" name="hora de contacto" value="A la mañana"></label>
+                <label for="a la mañana"> A la mañana</label>
+                <br>
+                <input type="radio" id="A la tarde" name="hora de contacto" value="A la tarde"></label>
+                <label for="a la tarde"> A la tarde</label>
+                <br>
+                <input type="radio" id="A la noche" name="hora de contacto" value="A la noche"></label>
+                <label for="a la noche"> A la noche</label>
+                <br>
+            </div>
+            <br>
+            <!-- Recibir información (radio buttom) -->
+            <div>
+                <label for="información">¿Deseas recibir e-mail con mayor información?</label>
+                <input type="radio" id="Si" name="Información" value="Si">
+                <label for="Si">Si</label>
+                <input type="radio" id="No" name="Información" value="No">
+                <label for="No">No</label>
+            </div>
+           <br>
+           <div>
+               <label for="comentarios">Agregue su comentario:</label>
+               <br>
+               <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+           </div>
+           <br>
+           <div>
+               <input type="submit" value="Enviar">
+               <input type="reset" value="Restaurar">
+           </div>
+    </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+    
+</body>
+</html>
